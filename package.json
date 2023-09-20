@@ -1,0 +1,15 @@
+{
+  "name": "cougarpainting",
+  "version": "1.0.0",
+  "description": "Cougar Painting LLC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start http://localhost:3000 && node index.js"
+  },
+  "author": "Alex Puga",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
