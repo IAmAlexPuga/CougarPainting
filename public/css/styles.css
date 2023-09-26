@@ -29,6 +29,7 @@ header h1 {
   font-weight: bold;
   letter-spacing: 11px;
   display: inline;
+  object-fit: contain;
   overflow: hidden;
   z-index: 1;
   position: relative;
@@ -77,7 +78,7 @@ ul {
   list-style-type: none;
 }
 ul.navbar {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -102,7 +103,44 @@ ul.navbar {
 }*/
 
 .imgHeader{
-  width: 98%;
+  object-fit: contain;
   z-index: -1;
-  background-image: url(../images/cropped\ bullseye.jpg);
+  margin: 0 auto;
+  background-image: url(../images/cropped_aiGenerated_overview.JPG);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: 1px;
+  padding-left: 70px;
+  padding-top: 5px;
+  margin: auto;
+}
+
+.gridImg {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.gridTxt {
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.fontHours {
+  font-size: 25px;
+}
+
+.fontDescription {
+  font-size: 30px;
 }
