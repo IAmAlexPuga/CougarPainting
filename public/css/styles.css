@@ -9,10 +9,11 @@ body {
 }
 
 header {
-  /*position: fixed;*/
+  /*position: fixed; prevents proper spacing from other text. all goes top left*/
   font-family: Arial;
   color: white;
   width: 98%;
+  text-align: center;
   margin: 10px;
   border: 1px solid white;
   /*background-color: black;*/
@@ -25,7 +26,6 @@ header h1 {
   width: 100%;
   padding: 2px;
   font-size: 5.5em;
-  text-align: center;
   font-weight: bold;
   letter-spacing: 11px;
   display: inline;
@@ -102,7 +102,7 @@ ul.navbar {
 }*/
 
 .imgHeader{
-  position: absolute;
-  width: 100%;
-  max-width: 100%;
+  width: 98%;
+  z-index: -1;
+  background-image: url(../images/cropped\ bullseye.jpg);
 }
