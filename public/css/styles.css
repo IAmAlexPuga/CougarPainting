@@ -5,16 +5,18 @@
 body {
   background-color: black;
   margin: 5px;
+  height: 100%
 }
 
 header {
-  position: fixed;
+  /*position: fixed; prevents proper spacing from other text. all goes top left*/
   font-family: Arial;
   color: white;
   width: 98%;
+  text-align: center;
   margin: 10px;
   border: 1px solid white;
-  background-color: black;
+  /*background-color: black;*/
   overflow: hidden;
 }
 
@@ -24,32 +26,39 @@ header h1 {
   width: 100%;
   padding: 2px;
   font-size: 5.5em;
-  text-align: center;
   font-weight: bold;
   letter-spacing: 11px;
-  display: inline-block;
-  /*display: flex; does not center text*/
+  display: inline;
+  object-fit: contain;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  /*position: fixed;
+  display: flex; does not center text*/
 }
 
 video {
-  position: absolute;
+  position: inherit;
   top: 0;
   left: 0;
   width: 100%; 
   height: 100%;
   padding-right: 20;
+  object-fit: cover;
   padding-left: 20;
+  overflow: hidden;
   /*min-width: 100%;
   min-height: 100%; */
   z-index: -1;
-  object-position: center;
-  object-fit: cover;
+  /*object-position: center;
+  object-fit: cover;*/
 }
 
 .content {
   color: white;
-  padding-top: 30%;
-  display: flex;
+  border: 1px solid white;
+  top: 1900;
+  margin: 10px;
 }
 
 li a {
@@ -69,7 +78,7 @@ ul {
   list-style-type: none;
 }
 ul.navbar {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -78,3 +87,60 @@ ul.navbar {
   justify-content: center;
 }
 
+/*.imageHeader {
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  padding-right: 20;
+  overflow: hidden;
+  padding-left: 20;
+  /*min-width: 100%;
+  min-height: 100%; 
+  z-index: -1;
+  object-position: center;
+  object-fit: cover;
+}*/
+
+.imgHeader{
+  object-fit: contain;
+  z-index: -1;
+  margin: 0 auto;
+  background-image: url(../images/cropped_aiGenerated_overview.JPG);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: 1px;
+  padding-left: 70px;
+  padding-top: 5px;
+  margin: auto;
+}
+
+.gridImg {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.gridTxt {
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.fontHours {
+  font-size: 25px;
+}
+
+.fontDescription {
+  font-size: 30px;
+}
