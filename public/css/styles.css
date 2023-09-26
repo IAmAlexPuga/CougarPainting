@@ -147,3 +147,29 @@ ul.navbar {
   text-align: left;
   padding-left: 15px;
 }
+
+h2 {
+  padding-left: 15px;
+}
+
+.gridSampleImg {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  padding-right: 15px;
+}
+
+.containerSampleImg {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  padding: 1px;
+  padding-top: 5px;
+  color: black;
+  margin: auto;
+  background-color: white;
+}
+
+/*Slideshow*/
