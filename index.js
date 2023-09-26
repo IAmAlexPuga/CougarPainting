@@ -14,8 +14,11 @@ router.get('/', function(req, res) {
 router.get('/about', function(req, res) { 
     res.sendFile(path.join(__dirname + '/about.html')); 
 }); 
-router.get('/sitemap', function(req, res) { 
-    res.sendFile(path.join(__dirname + '/sitemap.html')); 
+router.get('/services', function(req, res) { 
+    res.sendFile(path.join(__dirname + '/services.html')); 
+}); 
+router.get('/contact', function(req, res) { 
+    res.sendFile(path.join(__dirname + '/contact.html')); 
 }); 
 //add the router 
 app.use('/', router);
