@@ -13,9 +13,10 @@ header {
   /*position: fixed; prevents proper spacing from other text. all goes top left*/
   font-family: Arial;
   color: white;
+  height: 15vh;
   width: 98%;
   text-align: center;
-  margin: 10px;
+  margin: 10px auto;
   border: 1px solid white;
   /*background-color: black;*/
   overflow: hidden;
@@ -26,14 +27,15 @@ header h1 {
   background-color: black;*/
   width: 100%;
   padding: 2px;
-  font-size: 5.5em;
+  font-size: 6.0em;
   font-weight: bold;
-  letter-spacing: 11px;
+  letter-spacing: 8px;
   display: inline;
   object-fit: contain;
   overflow: hidden;
   z-index: 1;
   position: relative;
+  margin: 10px auto;
   /*position: fixed;
   display: flex; does not center text*/
 }
