@@ -182,8 +182,13 @@ h2 {
 }
 
 /*Slideshow*/
-.mySlides1, .mySlides2 {display: none}
-img {vertical-align: middle;}
+.mySlides1, .mySlides2, .mySlides3 {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
