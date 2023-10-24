@@ -1,5 +1,11 @@
 //Event Listeners
-window.addEventListener("resize", positionContent)
+window.addEventListener("resize", positionContent);
+
+//global vars
+let slideIndex = [1,1,1,1,1,1,1,1,1,1,1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4",
+ "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9"];
+
 
 function positionContent() {
     var header = document.getElementById("headerContent");
@@ -8,13 +14,13 @@ function positionContent() {
     con.style.top = top; 
 }
 
-let slideIndex = [1,1];
-let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"];
 showSlides(1, 0);
 showSlides(1, 1);
-showSlides(1, 2);
+
 
 function plusSlides(n, slideId) {
+  console.log("n, slideId: " + n + " " + slideId);
+  console.log(slideIndex.toString());
   showSlides(slideIndex[slideId] += n, slideId);
 }
 
@@ -31,4 +37,11 @@ function showSlides(n, no) {
      x[i].style.display = "none";  
   }
   x[slideIndex[no]-1].style.display = "block";  
+}
+
+
+function showSlidesOnPage(n, no) {
+  for(n; n <= no; n++) {
+    showSlides(1,n);
+  }
 }
