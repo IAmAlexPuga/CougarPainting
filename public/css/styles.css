@@ -118,6 +118,12 @@ ul.navbar {
   background-image: url(../images/cropped_aiGenerated_overview.JPG);
 }
 
+.imgHeaderRiver{
+  object-fit: contain;
+  z-index: -1;
+  margin: 0 auto;
+}
+
 .container {
   display: flex;
   align-items: center;
