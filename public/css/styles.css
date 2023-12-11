@@ -118,6 +118,12 @@ ul.navbar {
   background-image: url(../images/cropped_aiGenerated_overview.JPG);
 }
 
+.imgHeaderRiver{
+  object-fit: contain;
+  z-index: -1;
+  margin: 0 auto;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -182,8 +188,15 @@ h2 {
 }
 
 /*Slideshow*/
-.mySlides1, .mySlides2 {display: none}
-img {vertical-align: middle;}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, 
+.mySlides5, .mySlides6, .mySlides7, .mySlides8,
+ .mySlides9, .mySlides10, .mySlides11 {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
